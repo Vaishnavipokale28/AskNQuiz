@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "LoggerService.Controllers.LogController",
+    "Method": "WriteLog",
+    "RelativePath": "api/logs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LoggerService.Models.LogRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

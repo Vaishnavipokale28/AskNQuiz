@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|d:\\dac\\.net\\projectlogger\\loggerservice\\loggerservice\\loggerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\loggerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|d:\\dac\\.net\\projectlogger\\loggerservice\\loggerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|d:\\dac\\.net\\projectlogger\\loggerservice\\loggerservice\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|d:\\dac\\.net\\projectlogger\\loggerservice\\loggerservice\\services\\fileloggerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\services\\fileloggerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|d:\\dac\\.net\\projectlogger\\loggerservice\\loggerservice\\models\\logrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\models\\logrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Program.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Program.cs",
+              "ToolTip": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Program.cs",
+              "RelativeToolTip": "LoggerService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:22:28.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoggerService",
+              "DocumentMoniker": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\LoggerService.csproj",
+              "RelativeDocumentMoniker": "LoggerService\\LoggerService.csproj",
+              "ToolTip": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\LoggerService.csproj",
+              "RelativeToolTip": "LoggerService\\LoggerService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-22T06:56:07.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogController.cs",
+              "DocumentMoniker": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Controllers\\LogController.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Controllers\\LogController.cs",
+              "ToolTip": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Controllers\\LogController.cs",
+              "RelativeToolTip": "LoggerService\\Controllers\\LogController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:03:17.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileLoggerService.cs",
+              "DocumentMoniker": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Services\\FileLoggerService.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Services\\FileLoggerService.cs",
+              "ToolTip": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Services\\FileLoggerService.cs",
+              "RelativeToolTip": "LoggerService\\Services\\FileLoggerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:01:18.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LogRequest.cs",
+              "DocumentMoniker": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Models\\LogRequest.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Models\\LogRequest.cs",
+              "ToolTip": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\Models\\LogRequest.cs",
+              "RelativeToolTip": "LoggerService\\Models\\LogRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T06:58:43.757Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
