@@ -1,4 +1,5 @@
 package com.student.entities;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.student.entities.Doubt;
 
 
@@ -34,6 +35,7 @@ public class Student {
     private Long courseId;
 
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+    @JsonIgnore
     private List<Doubt> doubts;
 
 

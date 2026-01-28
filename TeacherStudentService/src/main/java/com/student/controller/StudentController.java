@@ -27,7 +27,7 @@ public class StudentController {
     private final StudentService service;
 
 
-    @PostMapping("/add")
+    @PostMapping("/resgister")
     public ResponseEntity<?> addNewStudent(@RequestBody @Valid StudentDto studentDto) {
         try {
             return ResponseEntity
