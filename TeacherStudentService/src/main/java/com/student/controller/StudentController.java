@@ -19,7 +19,7 @@ import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 
 @RestController
-@RequestMapping("/students/internal")
+@RequestMapping("/students")
 @AllArgsConstructor
 public class StudentController {
 
@@ -27,8 +27,8 @@ public class StudentController {
     private final StudentService service;
 
 
-    @PostMapping("/register")
-    public ResponseEntity<?> registerStudent(@RequestBody @Valid StudentDto studentDto) {
+    @PostMapping("/add")
+    public ResponseEntity<?> addNewStudent(@RequestBody @Valid StudentDto studentDto) {
         try {
             return ResponseEntity
                     .status(HttpStatus.OK)
@@ -36,7 +36,7 @@ public class StudentController {
         } catch (RuntimeException e) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
-                    .body(new ApiResponse(e.getMessage(), "FAILED"));
+                    .body(new ApiResponse(e.getMessage(), "Failed.."));
         }
     }
     
