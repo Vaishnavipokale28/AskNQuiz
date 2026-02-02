@@ -92,7 +92,15 @@ namespace UserAuthService.Services
             
 
             // token of 64 characters is needed
-            var creds = new SigningCredentials(JwtKeyHelper.GetPrivateKey(), SecurityAlgorithms.RsaSha256);
+            var privateKeyPath = config["JwtKeys:PrivateKeyPath"]
+                ?? Environment.GetEnvironmentVariable("JWT_PRIVATE_KEY_PATH");
+
+            if (string.IsNullOrWhiteSpace(privateKeyPath))
+            {
+                throw new InvalidOperationException("JWT private key path is not configured. Set JwtKeys:PrivateKeyPath or JWT_PRIVATE_KEY_PATH.");
+            }
+
+            var creds = new SigningCredentials(JwtKeyHelper.GetPrivateKey(privateKeyPath), SecurityAlgorithms.RsaSha256);
 
             var tokenDescriptor = new JwtSecurityToken(
                 issuer: config.GetValue<string>("AppSettings:Issuer"),

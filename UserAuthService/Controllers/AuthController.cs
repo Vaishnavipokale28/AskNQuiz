@@ -1,93 +1,95 @@
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http;
+using UserAuthService.Clients;
 using UserAuthService.DTOs;
 using UserAuthService.Entities;
 using UserAuthService.Services;
 
-namespace UserAuthService.Controllers
-{
-    [Route("[controller]")]
-    [ApiController]
-    public class AuthController : ControllerBase
+    namespace UserAuthService.Controllers
     {
-        private readonly IAuthService _authService;
-        private readonly IHttpClientFactory _httpClientFactory;
-        private readonly IConfiguration _config;
-
-        public AuthController(IAuthService authService, IHttpClientFactory httpClientFactory, IConfiguration config)
+        [Route("[controller]")]
+        [ApiController]
+        public class AuthController(IAuthService authService, IStudentServiceClient studentClient) : ControllerBase
         {
-            _authService = authService;
-            _httpClientFactory = httpClientFactory;
-            _config = config;
-        }
+            public static User user = new();
+
 
         [HttpPost("register")]
-        public async Task<ActionResult<User>> Register([FromBody] UserDTO userDTO)
+        public async Task<ActionResult<User>> Register(UserDTO userDTO)
         {
-            // 1) Create user in .NET DB
-            var user = await _authService.RegisterAsync(userDTO);
+            // 1. Register User in .NET Database
+            var user = await authService.RegisterAsync(userDTO);
+
             if (user == null)
-                return BadRequest("User already exists!");
-
-            // 2) Create a matching Student in Spring service
-            // Spring base URL is configurable: ServiceUrls:SpringBaseUrl (default http://localhost:8080)
-            var client = _httpClientFactory.CreateClient("SpringService");
-
-            var studentDto = new StudentDTO
             {
-                Name = string.IsNullOrWhiteSpace(userDTO.Name) ? userDTO.Email.Split('@')[0] : userDTO.Name,
-                Email = user.Email,
-                Password = userDTO.Password,
-                AdmissionDate = DateOnly.FromDateTime(userDTO.AdmissionDate == default ? DateTime.UtcNow : userDTO.AdmissionDate)
+                return BadRequest("User already exists!!!");
+            }
+
+            // 2. Prepare to call Java Service
+            var client = httpClientFactory.CreateClient();
+
+            // Data to send to Java (must match StudentDto.java)
+            var studentData = new
+            {
+                email = user.Email,
+                // add other fields needed by Java
+
             };
 
-            var resp = await client.PostAsJsonAsync("/students/register", studentDto);
+            // 3. Call Java via POST
+            var response = await client.PostAsJsonAsync("http://localhost:8080/students/register", studentData);
 
-            if (!resp.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
-                // Rollback .NET user if Spring student creation failed
-                await _authService.DeleteUserAsync(user.UserId);
-
-                var body = await resp.Content.ReadAsStringAsync();
-                return StatusCode(500, $"Failed to create Student in Spring service. Status={(int)resp.StatusCode}. Body={body}");
+                // Optional: Handle what happens if Java fails (e.g., rollback .NET user)
+                return StatusCode(500, "User created, but failed to create Student record in Java service.");
             }
 
             return Ok(user);
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<TokenResponseDTO>> Login([FromBody] UserDTO userDTO)
-        {
-            var result = await _authService.LoginAsync(userDTO);
-            if (result == null)
-                return BadRequest("Invalid user credentials!");
+            public async Task<ActionResult<TokenResponseDTO>> Login(UserDTO userDTO)
+            {
+                var result = await authService.LoginAsync(userDTO);
+                if (result == null)
+                {
+                    return BadRequest("Invalid User Credentials!!!");
+                }
 
-            return Ok(result);
-        }
+                // return JSON object instead of just a string
+                return Ok(result);
+            }
 
-        [Authorize]
-        [HttpGet]
-        public IActionResult AuthenticatedEndpoint()
-        {
-            return Ok("You are authenticated.");
-        }
+        // [Authorize] - used to restrict the access ensuring only authenticated and authorized users can access this endpoint 
 
-        [Authorize(Roles = "Admin")]
-        [HttpGet("admin")]
-        public IActionResult AdminOnlyEndPoint()
-        {
-            return Ok("You are an admin.");
-        }
+            [Authorize]
+            [HttpGet]
+            public IActionResult AuthticatedEndpoint()
+            {
+                return Ok("You are Authticated....");
+            }
 
-        [HttpPost("refresh-token")]
-        public async Task<ActionResult<TokenResponseDTO>> RefreshToken([FromBody] RefreshTokenRequestDTO dto)
-        {
-            var result = await _authService.RefreshTokensAsync(dto);
+            [Authorize(Roles = "Admin")]
+            [HttpGet("admin")]
+            public IActionResult AdminOnlyEndPoint()
+            {
+                return Ok("You are an admin....");
+            }
+
+
+            [HttpPost("refresh-token")]
+            public async Task<ActionResult<TokenResponseDTO>> RefreshToken([FromBody] RefreshTokenRequestDTO refreshTokenRequestDTO)
+            {
+                
+                var result = await authService.RefreshTokensAsync(refreshTokenRequestDTO);
 
             if (result is null || result.AccessToken is null || result.RefreshToken is null)
-                return Unauthorized("Invalid refresh token!");
+                return Unauthorized("Invalid Refresh Token!!!");
 
             return Ok(result);
+
+            }
         }
     }
-}

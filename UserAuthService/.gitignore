@@ -1,0 +1,10 @@
+bin/
+obj/
+.vs/
+Keys/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+appsettings.*.local.json
+secrets.json

@@ -1,22 +1,23 @@
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization; // Required for mapping names
 
 namespace UserAuthService.DTOs
 {
-    // Must match Spring StudentDto.java JsonProperty names exactly:
-    // Name, Email, Password, AdmissionDate
     public class StudentDTO
     {
-        [JsonPropertyName("Name")]
-        public string Name { get; set; } = string.Empty;
+        // Java: private String studentName;
+        [JsonPropertyName("studentName")]
+        public string StudentName { get; set; } = string.Empty;
 
-        [JsonPropertyName("Email")]
+        // Java: private String email;
+        [JsonPropertyName("email")]
         public string Email { get; set; } = string.Empty;
 
-        [JsonPropertyName("Password")]
+        // Java: private String password;
+        [JsonPropertyName("password")]
         public string Password { get; set; } = string.Empty;
 
-        // Spring expects ISO date (yyyy-MM-dd). System.Text.Json handles DateOnly well in .NET 8.
-        [JsonPropertyName("AdmissionDate")]
-        public DateOnly AdmissionDate { get; set; } = DateOnly.FromDateTime(DateTime.UtcNow);
+        
+
+        
     }
 }
