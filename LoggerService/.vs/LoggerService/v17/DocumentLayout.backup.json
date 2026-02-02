@@ -1,0 +1,114 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|c:\\users\\janhv\\desktop\\janhavi\\cdac\\ashnquiz project\\git repo\\asknquiz\\loggerservice\\loggerservice\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\controllers\\logcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|c:\\users\\janhv\\desktop\\janhavi\\cdac\\ashnquiz project\\git repo\\asknquiz\\loggerservice\\loggerservice\\loggerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\loggerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|c:\\users\\janhv\\desktop\\janhavi\\cdac\\ashnquiz project\\git repo\\asknquiz\\loggerservice\\loggerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|c:\\users\\janhv\\desktop\\janhavi\\cdac\\ashnquiz project\\git repo\\asknquiz\\loggerservice\\loggerservice\\services\\fileloggerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\services\\fileloggerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|c:\\users\\janhv\\desktop\\janhavi\\cdac\\ashnquiz project\\git repo\\asknquiz\\loggerservice\\loggerservice\\models\\logrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1424A610-6020-4A1C-AF4B-93D0885A9FB9}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\models\\logrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Program.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Program.cs",
+              "ToolTip": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Program.cs",
+              "RelativeToolTip": "LoggerService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:22:28.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoggerService.csproj",
+              "DocumentMoniker": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\LoggerService.csproj",
+              "RelativeDocumentMoniker": "LoggerService\\LoggerService.csproj",
+              "ToolTip": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\LoggerService.csproj",
+              "RelativeToolTip": "LoggerService\\LoggerService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-22T06:56:07.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LogController.cs",
+              "DocumentMoniker": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Controllers\\LogController.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Controllers\\LogController.cs",
+              "ToolTip": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Controllers\\LogController.cs",
+              "RelativeToolTip": "LoggerService\\Controllers\\LogController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:03:17.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileLoggerService.cs",
+              "DocumentMoniker": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Services\\FileLoggerService.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Services\\FileLoggerService.cs",
+              "ToolTip": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Services\\FileLoggerService.cs",
+              "RelativeToolTip": "LoggerService\\Services\\FileLoggerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T07:01:18.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LogRequest.cs",
+              "DocumentMoniker": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Models\\LogRequest.cs",
+              "RelativeDocumentMoniker": "LoggerService\\Models\\LogRequest.cs",
+              "ToolTip": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\Models\\LogRequest.cs",
+              "RelativeToolTip": "LoggerService\\Models\\LogRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T06:58:43.757Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
