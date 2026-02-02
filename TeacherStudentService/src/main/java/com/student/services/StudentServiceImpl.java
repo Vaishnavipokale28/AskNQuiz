@@ -4,9 +4,9 @@ import com.student.dtos.ApiResponse;
 import com.student.dtos.StudentDto;
 import com.student.entities.Student;
 import com.student.repository.StudentRepository;
-import com.student.services.StudentService;
 import lombok.AllArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -33,8 +33,9 @@ public class StudentServiceImpl implements StudentService {
         student.setStudentName(studentDto.getStudentName());
         student.setEmail(studentDto.getEmail());
         student.setPassword(studentDto.getPassword());
-        student.setAdmissionDate(studentDto.getAdmissionDate());
-        student.setCourseId(studentDto.getCourseId());
+        // set to current date
+        student.setAdmissionDate(LocalDate.now());
+        
 
 
         repository.save(student);
@@ -58,8 +59,7 @@ public class StudentServiceImpl implements StudentService {
         student.setStudentName(studentDto.getStudentName());
         student.setEmail(studentDto.getEmail());
         student.setPassword(studentDto.getPassword());
-        student.setAdmissionDate(studentDto.getAdmissionDate());
-        student.setCourseId(studentDto.getCourseId());
+        // can't update Admission date
 
         repository.save(student);
         
@@ -106,7 +106,7 @@ public class StudentServiceImpl implements StudentService {
 	                dto.setStudentName(student.getStudentName());
 	                dto.setEmail(student.getEmail());
 	                dto.setAdmissionDate(student.getAdmissionDate());
-	                dto.setCourseId(student.getCourseId());
+	                
 	                
 	                return dto;
 	            })

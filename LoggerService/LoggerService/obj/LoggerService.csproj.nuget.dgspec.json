@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\LoggerService.csproj": {}
+    "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\LoggerService.csproj": {}
   },
   "projects": {
-    "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\LoggerService.csproj": {
+    "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\LoggerService.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\DAC\\.Net\\ProjectLogger\\LoggerService\\LoggerService\\obj\\",
+        "projectPath": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\janhv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\janhv\\Desktop\\JANHAVI\\CDAC\\AshNQuiz Project\\Git Repo\\AskNQuiz\\LoggerService\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\janhv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

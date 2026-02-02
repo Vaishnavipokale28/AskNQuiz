@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "UserAuthService.Controllers.AuthController",
-    "Method": "AuthticatedEndpoint",
+    "Method": "AuthenticatedEndpoint",
     "RelativePath": "Auth",
     "HttpMethod": "GET",
     "IsController": true,
@@ -54,7 +54,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "refreshTokenRequestDTO",
+        "Name": "dto",
         "Type": "UserAuthService.DTOs.RefreshTokenRequestDTO",
         "IsRequired": true
       }
@@ -73,7 +73,7 @@
   },
   {
     "ContainingType": "UserAuthService.Controllers.AuthController",
-    "Method": "Regiter",
+    "Method": "Register",
     "RelativePath": "Auth/register",
     "HttpMethod": "POST",
     "IsController": true,

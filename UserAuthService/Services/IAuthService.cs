@@ -9,5 +9,7 @@ namespace UserAuthService.Services
         Task<TokenResponseDTO?> LoginAsync(UserDTO userDTO);
 
         Task<TokenResponseDTO?> RefreshTokensAsync(RefreshTokenRequestDTO request);
+
+        Task DeleteUserAsync(long userId);
     }
 }

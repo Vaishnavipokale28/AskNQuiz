@@ -252,9 +252,17 @@
             "type": "string",
             "nullable": true
           },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
           "role": {
             "type": "string",
             "nullable": true
+          },
+          "admissionDate": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

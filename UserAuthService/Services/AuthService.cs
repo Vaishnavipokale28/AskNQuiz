@@ -147,5 +147,17 @@ namespace UserAuthService.Services
 
             return await CreateTokenResponse(user);
         }
+
+       
+        // method used for rollback in case Java service throws some expections 
+        public async Task DeleteUserAsync(long userId)
+        {
+            var user = await dbContext.Users.FindAsync(userId);
+            if (user != null)
+            {
+                dbContext.Users.Remove(user);
+                await dbContext.SaveChangesAsync();
+            }
+        }
     }
 }

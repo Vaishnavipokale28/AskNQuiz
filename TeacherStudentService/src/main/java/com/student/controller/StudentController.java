@@ -27,7 +27,7 @@ public class StudentController {
     private final StudentService service;
 
 
-    @PostMapping("/add")
+    @PostMapping("/register")
     public ResponseEntity<?> addNewStudent(@RequestBody @Valid StudentDto studentDto) {
         try {
             return ResponseEntity
@@ -36,7 +36,7 @@ public class StudentController {
         } catch (RuntimeException e) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
-                    .body(new ApiResponse(e.getMessage(), "Failed.."));
+                    .body(new ApiResponse(e.getMessage(), "FAILED"));
         }
     }
     

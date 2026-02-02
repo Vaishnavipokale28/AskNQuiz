@@ -1,6 +1,4 @@
 package com.student.entities;
-import com.student.entities.Doubt;
-
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -25,18 +23,16 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long studentId;
 
+    private Long userId;   // from UserAuthService
+    
     private String studentName;
     private String email;
     private String password;
 
 
     private LocalDate admissionDate;
-    private Long courseId;
 
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
     private List<Doubt> doubts;
-
-
-
     
 }
