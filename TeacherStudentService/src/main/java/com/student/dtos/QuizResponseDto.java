@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 public class QuizResponseDto {
 
-	//for to get all quiz which are avaible for studentds
+	//for to get all quiz which are available for students
 	
 	private Long quizId;
     private String title;

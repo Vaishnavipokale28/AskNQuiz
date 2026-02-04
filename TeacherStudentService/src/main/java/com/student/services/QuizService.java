@@ -9,7 +9,7 @@ import com.student.entities.Quiz;
 
 public interface QuizService {
 
-	ApiResponse createQuiz( QuizDto quizDto);
+	QuizResponseDto createQuiz( QuizDto quizDto);
 
 	 List<Quiz> getAllQuizzes();
 	 

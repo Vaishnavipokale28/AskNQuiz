@@ -1,6 +1,8 @@
 package com.student.controller;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +22,7 @@ public class QuizAttemptController {
 
 	private final QuizAttemptService service;
 	
-	//this is the flow from creating quize to attempted
+	//this is the flow from creating quiz to attempted
 //	POST /quiz/add
 //    → status = DRAFT
 //
@@ -54,6 +56,28 @@ public class QuizAttemptController {
 	    public ResponseEntity<?> submitQuiz(@RequestBody SubmitQuizDto dto) {
 	        try {
 	            return ResponseEntity.ok(service.submitQuiz(dto));
+	        } catch (RuntimeException e) {
+	            return ResponseEntity.badRequest()
+	                    .body(new ApiResponse(e.getMessage(), "FAILED"));
+	        }
+	    }
+	    
+	 //get full result for an attempt
+	    @GetMapping("/result/{attemptId}")
+	    public ResponseEntity<?> getResult(@PathVariable Long attemptId) {
+	        try {
+	            return ResponseEntity.ok(service.getAttemptResult(attemptId));
+	        } catch (RuntimeException e) {
+	            return ResponseEntity.badRequest()
+	                    .body(new ApiResponse(e.getMessage(), "FAILED"));
+	        }
+	    }
+
+	    //get all results of a student
+	    @GetMapping("/student/{studentId}")
+	    public ResponseEntity<?> getStudentResults(@PathVariable Long studentId) {
+	        try {
+	            return ResponseEntity.ok(service.getResultsForStudent(studentId));
 	        } catch (RuntimeException e) {
 	            return ResponseEntity.badRequest()
 	                    .body(new ApiResponse(e.getMessage(), "FAILED"));

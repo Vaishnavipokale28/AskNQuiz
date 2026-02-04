@@ -43,6 +43,7 @@ class TeacherServiceImpl implements TeacherService{
 	            .stream()
 	            .map(teacher -> {
 	                TeacherDto dto = new TeacherDto();
+	                dto.setTeacherId(teacher.getTeacherId());
 	                dto.setName(teacher.getName());
 	                dto.setEmail(teacher.getEmail());
 	                dto.setSubject(teacher.getSubject());
@@ -51,6 +52,7 @@ class TeacherServiceImpl implements TeacherService{
 	            })
 	            .toList();
 	}
+	
 	@Override
 	public ApiResponse updateTeacher(Long teacherId, TeacherDto dto) {
 		Teacher teacher = teacherRepository.findById(teacherId)
@@ -65,6 +67,7 @@ class TeacherServiceImpl implements TeacherService{
 
         return new ApiResponse("Teacher updated successfully", "SUCCESS");
 	}
+	
 	@Override
 	public ApiResponse deleteTeacher(Long teacherId) {
 		 Teacher teacher = teacherRepository.findById(teacherId)

@@ -32,22 +32,19 @@ public class QuizController {
 	//this is the flow for creating quiz 
 	
 	 @PostMapping("/add")
-	    public ResponseEntity<?> addNewQuiz(@RequestBody @Valid QuizDto quizDto) {
+	 public ResponseEntity<?> addNewQuiz(@RequestBody @Valid QuizDto quizDto) {
 	        try {
+	            // returns quizId
 	            return ResponseEntity
-	                    .status(HttpStatus.OK)
-	                    .body(quizService.createQuiz(quizDto));
+	            		.status(HttpStatus.OK)
+	            		.body(quizService.createQuiz(quizDto));
 	        } catch (RuntimeException e) {
 	            return ResponseEntity
-	                    .status(HttpStatus.BAD_REQUEST)
+	            		.status(HttpStatus.BAD_REQUEST)
 	                    .body(new ApiResponse(e.getMessage(), "FAILED"));
 	        }
 	    }
-	 
-//	 @GetMapping("/all")
-//	    public ResponseEntity<?> getAllQuizzes() {
-//	        return ResponseEntity.ok(quizService.getAllQuizzes());
-//	    }
+	
 	 
 	 @GetMapping("/{quizId}")
 	    public ResponseEntity<?> getQuizById(@PathVariable Long quizId) {

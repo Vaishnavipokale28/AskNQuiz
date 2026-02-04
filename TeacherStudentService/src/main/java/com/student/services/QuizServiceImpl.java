@@ -26,7 +26,7 @@ public class QuizServiceImpl implements QuizService{
 	
 	
 	@Override
-	public ApiResponse createQuiz(QuizDto quizDto) {
+	public QuizResponseDto createQuiz(QuizDto quizDto) {
 		
 		 Teacher teacher = teacherRepository.findById(quizDto.getTeacherId())
 	                .orElseThrow(() -> new RuntimeException("Teacher not found"));
@@ -40,8 +40,23 @@ public class QuizServiceImpl implements QuizService{
         quiz.setTeacher(teacher);
         quiz.setStatus(QuizStatus.DRAFT);
 
-        quizRepository.save(quiz);
-        return new ApiResponse("Quiz Created Successfully", "Success");
+        Quiz saved = quizRepository.save(quiz);
+        
+        QuizResponseDto res = new QuizResponseDto();
+        res.setQuizId(saved.getQuizId());
+        res.setTitle(saved.getTitle());
+        res.setSubject(saved.getSubject());
+        res.setTimeLimit(saved.getTimeLimit());
+        res.setTotalMarks(saved.getTotalMarks());
+        res.setStatus(saved.getStatus().name());
+        res.setTeacherId(saved.getTeacher().getTeacherId());
+        res.setTeacherName(saved.getTeacher().getName());
+
+        return res;
+        
+//        return new ApiResponse("Quiz Created Successfully", "Success");
+        
+       
 	}
 
 
