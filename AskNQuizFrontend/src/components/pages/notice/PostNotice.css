@@ -1,0 +1,67 @@
+.post-notice-page {
+  min-height: 100vh;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.post-notice-card {
+  width: 480px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.post-notice-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post-notice-card input,
+.post-notice-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.post-notice-card textarea {
+  resize: none;
+}
+
+.post-notice-card button {
+  width: 100%;
+  padding: 11px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.post-notice-card button:hover {
+  background-color: #1e40af;
+}
+
+.post-notice-card button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  color: #dc2626;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.success-msg {
+  color: #16a34a;
+  margin-bottom: 10px;
+  font-weight: bold;
+}

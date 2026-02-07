@@ -1,0 +1,31 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: #cbd5f5;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 30px;
+}

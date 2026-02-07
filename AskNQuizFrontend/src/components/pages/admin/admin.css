@@ -1,0 +1,35 @@
+/* ===== Common Admin Styles ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-container {
+  padding: 30px;
+}
+
+.admin-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+/* ===== Inputs ===== */
+input {
+  padding: 8px;
+  margin: 6px 0;
+  width: 250px;
+  display: block;
+}

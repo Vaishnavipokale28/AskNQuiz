@@ -1,0 +1,37 @@
+.list-page {
+  padding: 40px;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+.doubt-box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #555;
+}
+
+.reply-box {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #f7f9ff;
+  border: 1px solid #e3e8ff;
+}
+
+.reply-box h4 {
+  margin: 0 0 6px 0;
+}
+
+.reply-box.pending {
+  background: #fff7f7;
+  border-color: #ffd5d5;
+}

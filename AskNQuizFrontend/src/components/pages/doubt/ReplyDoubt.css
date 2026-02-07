@@ -1,0 +1,38 @@
+.reply-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.reply-card {
+  width: 420px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+.reply-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reply-card input,
+.reply-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.reply-card button {
+  width: 100%;
+  padding: 10px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
